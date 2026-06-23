@@ -72,4 +72,10 @@ public class Funcionario {
 		this.departamento = departamento;
 	}
 
+	@Override
+	public String toString() {
+		return "Funcionario [idFuncionario=" + idFuncionario + ", nome=" + nome + ", email=" + email + ", senha="
+				+ senha + ", salario=" + salario + ", departamento=" + departamento + "]";
+	}
+
 }

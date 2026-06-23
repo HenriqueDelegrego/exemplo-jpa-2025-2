@@ -32,4 +32,9 @@ public class Departamento {
 		this.nomeDepartamento = nomeDepartamento;
 	}
 
+	@Override
+	public String toString() {
+		return "Departamento [idDepartamento=" + idDepartamento + ", nomeDepartamento=" + nomeDepartamento + "]";
+	}
+
 }
