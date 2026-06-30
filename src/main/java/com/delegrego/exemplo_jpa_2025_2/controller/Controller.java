@@ -3,11 +3,19 @@ package com.delegrego.exemplo_jpa_2025_2.controller;
 import java.util.List;
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.delegrego.exemplo_jpa_2025_2.entity.Departamento;
+import com.delegrego.exemplo_jpa_2025_2.service.DepartamentoService;
+import com.delegrego.exemplo_jpa_2025_2.utils.ConsoleUtils;
+
 @Component
 public class Controller implements CommandLineRunner {
+	
+	@Autowired
+	DepartamentoService departamentoService;
 
 	@Override
 	public void run(String... args) throws Exception {
