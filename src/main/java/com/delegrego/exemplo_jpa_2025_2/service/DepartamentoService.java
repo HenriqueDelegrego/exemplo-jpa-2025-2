@@ -26,6 +26,11 @@ public class DepartamentoService {
 		return departamentoRepository.findAll();
 	}
 
+	public Departamento obterDepartamentoPorId(int id) {
+		return departamentoRepository.findById(id).orElseThrow(()
+				-> new RuntimeException("Departamento não existe"));
+	}
+
 	// Update
 	public void atualizarDepartamento(Departamento departamento) {
 		departamentoRepository.save(departamento);

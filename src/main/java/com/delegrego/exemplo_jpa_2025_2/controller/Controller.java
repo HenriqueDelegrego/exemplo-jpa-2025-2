@@ -8,7 +8,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import com.delegrego.exemplo_jpa_2025_2.entity.Departamento;
+import com.delegrego.exemplo_jpa_2025_2.entity.Funcionario;
 import com.delegrego.exemplo_jpa_2025_2.service.DepartamentoService;
+import com.delegrego.exemplo_jpa_2025_2.service.FuncionarioService;
 import com.delegrego.exemplo_jpa_2025_2.utils.ConsoleUtils;
 
 @Component
@@ -16,6 +18,9 @@ public class Controller implements CommandLineRunner {
 	
 	@Autowired
 	DepartamentoService departamentoService;
+	
+	@Autowired
+	FuncionarioService funcionarioService;
 
 	@Override
 	public void run(String... args) throws Exception {
